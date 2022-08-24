@@ -8,7 +8,8 @@ Code, data, and results of the [COLING 2022](https://coling2022.org) paper _Does
 ## Plots and Results
 
 The plots and results used in the paper is available at https://doi.org/10.5683/SP3/PCZHN4.
-- `gridloc_checkpoints.zip`[1.8GB] contains all the probe model checkpoints and training logs.
+This Dataverse repository should contain the following files:
+- [`gridloc_checkpoints.zip`](https://borealisdata.ca/file.xhtml?fileId=375861&version=1.0)[1.8GB] contains all the probe model checkpoints and training logs.
 
 The heat map visualisation of the layer performance probing result of Jawahar et al. (2019) (figure 2 of the paper), and the architecture of GirdLoc (figure 3 of the paper) are available at [`plots/others`](plots/others).
 
@@ -41,13 +42,13 @@ cd ..
 ```
 
 ### Train Probes
-Initiate the training process by running the script `scripts/train_probes.py`.
+Initiate the training process by running the script [`scripts/train_probes.py`](scripts/train_probes.py).
 ```bash
 python scripts/train_probes.py
 ```
 
 ### Plot Layer Attention Weight
-The script `scripts/plot_layer_weight_centers.py` contains the code to compute the layer attention weight distributions used in section 5.1 and 5.2 of the paper.
+The script [`scripts/plot_layer_weight_centers.py`](scripts/plot_layer_weight_centers.py) contains the code to compute the layer attention weight distributions used in section 5.1 and 5.2 of the paper.
 ```bash
 python scripts/plot_layer_weight_centers.py
 ```
@@ -56,14 +57,14 @@ The script will generate 3 files for each epoch of the probe: an `.svg` file, a 
 - `layer_weight_center_epoch_X.csv`: The exact attention weights of the 12 layers.
 - `layer_weight_center_epoch_X.npy`: The serialised NumPy file containing the layer attention weights of every sentence in the task's test set.  See `scripts/read_npy.py` for more details on how to load and read the results.
 
-Similarly, the script `scripts/plot_top_layer_distribution.py` contains the code to compute the top layer distributions used in section 5.1 and section 5.2 of the paper.
+Similarly, the script [`scripts/plot_top_layer_distribution.py`](scripts/plot_top_layer_distribution.py) contains the code to compute the top layer distributions used in section 5.1 and section 5.2 of the paper.
 ```bash
 python scripts/plot_layer_weight_centers.py
 ```
 The script will only generate a `top_layer_distribution_X.svg` file containing the plot of the top layer distributions.
 
 ### Plot Sentences
-The script `scripts/plot_layer_weight_centers.py` contains the code to plot token-position attention weights of sentences.  These plots are used in section 5.3 and section 5.4 of the paper.
+The script [`scripts/plot_layer_weight_centers.py`](scripts/plot_layer_weight_centers.py) contains the code to plot token-position attention weights of sentences.  These plots are used in section 5.3 and section 5.4 of the paper.
 ```bash
 python scripts/plot_sentences.py
 ```
@@ -71,15 +72,27 @@ python scripts/plot_sentences.py
 The script will generate a `sentence_plot_XXXXXX.svg` file containing the token-position attention weights heat map.  The sentence ID in the file name directly corresponds to the line number of SentEval data.
 
 ### TreeDepth Correlation Analysis
-The script `scripts/tree_depth_analysis.py` contains the code to compute the average layer of different POSs and the correlation analysis of section 5.4 of the paper.
-
-You may need to change the paths in the script to match your directory organisation.
+The script [`scripts/tree_depth_analysis.py`](scripts/tree_depth_analysis.py) contains the code to compute the average layer of different POSs and the correlation analysis of section 5.4 of the paper.
 
 ```bash
 python scripts/tree_depth_analysis.py
 ```
 
+**NOTE**: You may need to change the paths in the scripts to match your directory organisation.
+
 ## Citation
+```bibtex
+@inproceedings{niu-et-al-2022-bert,
+    title = "Does {BERT} Rediscover the Classical {NLP} Pipeline?",
+    author = "Niu, Jingcheng  and
+      Lu, Wenjie and
+      Penn, Gerald",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    publisher = "International Committee on Computational Linguistics"
+}
+```
 
 ## Contact
 Email: `{niu,luwenjie,gpenn}@cs.toronto.edu`
