@@ -1,0 +1,7 @@
+tqdm
+transformers
+sklearn
+scipy
+matplotlib
+seaborn
+stanza

@@ -1,0 +1,17 @@
+{
+    "hidden_size": 50,
+    "dropout": 0.0,
+    "learning_rate": 1e-4,
+    "optimizer": "adam",
+
+    "data_path": "data/SentEval/data/probing/top_constituents.txt",
+    "bert_version": "bert-base-uncased",
+
+    "epochs": 30,
+    "batch_size": 64,
+
+    "device": 0,
+
+    "output_directory": "output/top_constituents",
+    "print_on_record": true
+}
