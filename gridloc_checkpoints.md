@@ -1,7 +1,7 @@
 # GridLoc Probe Checkpoints
 This tarball contains all the probe model checkpoints used in the paper _Does BERT Rediscover the Classical NLP Pipeline?_
 
-The plots and results used in the paper is available at https://doi.org/10.5683/SP3/PCZHN4.
+The plots and results used in the paper are available at https://doi.org/10.5683/SP3/PCZHN4.
 This Dataverse repository should contain the following files:
 - [`gridloc_checkpoints.tar.gz`](https://borealisdata.ca/file.xhtml?fileId=378579)[1.8GB] contains all the probe model checkpoints and training logs.
 - [`gridloc_plots.tar.gz`](https://borealisdata.ca/file.xhtml?fileId=378580)[2.5GB] contains all the plots generated for the paper.
