@@ -1,5 +1,5 @@
 # GridLoc Probe Plots
-This tarball contains all the plots generated for the paper _Does BERT Rediscover the Classical NLP Pipeline?_
+This tarball contains all the plots generated for the paper _Does BERT Rediscover a Classical NLP Pipeline?_
 
 The plots and results used in the paper are available at https://doi.org/10.5683/SP3/PCZHN4.
 This Dataverse repository should contain the following files:
