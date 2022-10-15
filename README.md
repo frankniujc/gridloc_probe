@@ -1,5 +1,8 @@
 # Does BERT Rediscover a Classical NLP Pipeline?
-Code, data, and results of the [COLING 2022](https://coling2022.org) paper _Does BERT Rediscover a Classical NLP Pipeline?_
+Code, data, and results of the [COLING 2022](https://coling2022.org) paper [_Does BERT Rediscover a Classical NLP Pipeline?_](https://aclanthology.org/2022.coling-1.278/)
+
+[Link to the talk on YouTube](https://youtu.be/PKLc_v20Uzg)
+
 
 **Abstract**: Does BERT store surface knowledge in its bottom layers, syntactic knowledge in its middle layers, and semantic knowledge in its upper layers? In re-examining Jawahar et al. (2019) and Tenney et al.'s (2019) probes into the structure of BERT, we have found that the pipeline-like separation that they were seeking lacks conclusive empirical support. BERT's structure is, however, linguistically grounded, although perhaps in a way that is more nuanced than can be explained by layers alone. We introduce a novel probe, called _GridLoc_, through which we can also take into account token positions, training rounds, and random seeds. Using GridLoc, we are able to detect other, stronger regularities that suggest that pseudo-cognitive appeals to layer depth may not be the preferred mode of explanation for BERT's inner workings.
 
@@ -83,15 +86,18 @@ python scripts/tree_depth_analysis.py
 
 ## Citation
 ```bibtex
-@inproceedings{niu-et-al-2022-bert,
+@inproceedings{niu-etal-2022-bert,
     title = "Does {BERT} Rediscover a Classical {NLP} Pipeline?",
     author = "Niu, Jingcheng  and
-      Lu, Wenjie and
+      Lu, Wenjie  and
       Penn, Gerald",
     booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
     month = oct,
     year = "2022",
-    publisher = "International Committee on Computational Linguistics"
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.278",
+    pages = "3143--3153"
 }
 ```
 
